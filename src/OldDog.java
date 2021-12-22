@@ -14,4 +14,11 @@ public class OldDog extends Dog{
     public void setDeaf(boolean deaf) {
         isDeaf = deaf;
     }
+
+    @Override
+    public void bark() {
+        if (!isDeaf) {
+            super.bark();
+        }
+    }
 }
